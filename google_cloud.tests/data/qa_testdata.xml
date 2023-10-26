@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <number_of_instances>4</number_of_instances>
+  <operating_system>Free: Debian, CentOS, CoreOS, Ubuntu</operating_system>
+  <vm_class>Regular</vm_class>
+  <instance_type>n1-standard-8 (vCPUs: 8, RAM: 30 GB)</instance_type>
+  <number_of_gpu>4</number_of_gpu>
+  <gpu_type>NVIDIA Tesla V100</gpu_type>
+  <local_ssd>2x375 Gb</local_ssd>
+  <datacenter_location>Frankfurt (europe-west3)</datacenter_location>
+  <commited_usage>1 Year</commited_usage>
+</data>
