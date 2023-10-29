@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework.Internal;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace google_cloud.tests.page
     internal abstract class AbstractPage
     {
         protected IWebDriver driver;
-
+        protected Logger logger;
         protected AbstractPage(IWebDriver driver)
         {
             this.driver = driver;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework.Internal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,8 @@ namespace google_cloud.tests.utils
     {
         public static Dictionary<string, string> GetData()
         {
-            //string xmlFilePath = TestContext.Parameters.Get("testDataFile");
-            string xmlFilePath = "data/qa_testdata.xml";
+            string xmlFilePath = TestContext.Parameters.Get("testDataFile");
+            //string xmlFilePath = "data/qa_testdata.xml";
 
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(xmlFilePath);
