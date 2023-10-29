@@ -20,6 +20,7 @@ namespace google_cloud.tests
             Console.WriteLine(driverType);
             //string driverType = "edge";
             driver = DriverSelector.GetDriver(driverType);
+            driver.Manage().Window.Maximize();
             tempDriver = DriverSelector.GetDriver(driverType);
         }
 
