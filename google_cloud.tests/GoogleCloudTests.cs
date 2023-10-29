@@ -38,10 +38,10 @@ namespace google_cloud.tests
 
                 Assert.That(emailEstimation, Is.EqualTo(websiteEstimation));
             }
-            catch
+            catch(Exception ex)
             {
                 DriverScreenshot.TakeScreenshot(driver);
-                Assert.Fail("Test failed");
+                Assert.Fail("Test failed: " + ex.Message);
                 throw;
             }
         }
