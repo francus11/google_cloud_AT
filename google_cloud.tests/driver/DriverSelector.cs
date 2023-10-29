@@ -13,14 +13,14 @@ namespace google_cloud.tests.driver
 {
     internal class DriverSelector
     {
-        /*public static IWebDriver GetDriver(string select)
+        public static IWebDriver GetDriver(string select)
             => select switch
             {
                 "chrome" => new ChromeDriver(),
                 "edge" => new EdgeDriver(),
                 _ => new EdgeDriver()
-            };*/
-        public static IWebDriver GetDriver(string select)
+            };
+        /*public static IWebDriver GetDriver(string select)
         {
             switch(select)
             {
@@ -34,6 +34,6 @@ namespace google_cloud.tests.driver
                     new DriverManager().SetUpDriver(new EdgeConfig());
                     return new EdgeDriver();
             }
-        }
+        }*/
     }
 }
